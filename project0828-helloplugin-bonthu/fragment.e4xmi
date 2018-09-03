@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_8WwgwKsNEei6jsWe3ahhTg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_O4xN8KsPEei6jsWe3ahhTg" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_S6bFgKsPEei6jsWe3ahhTg" elementId="project0828-helloplugin-bonthu.command.showhello" commandName="Show Hello"/>
+    <elements xsi:type="commands:Command" xmi:id="_BVOegKsREei6jsWe3ahhTg" elementId="project0828-helloplugin-bonthu.command.readfileandshowhello" commandName="Read File and Show Hello"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_BvfOEKsQEei6jsWe3ahhTg" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_HPQpcKsQEei6jsWe3ahhTg" elementId="project0828-helloplugin-bonthu.handler.0" contributionURI="bundleclass://project0828-helloplugin-bonthu/HelloPlugin" command="_S6bFgKsPEei6jsWe3ahhTg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_94vwkKsQEei6jsWe3ahhTg" elementId="project0828-helloplugin-bonthu.handler.1" contributionURI="bundleclass://project0828-helloplugin-bonthu/ReadShowHandler" command="_BVOegKsREei6jsWe3ahhTg"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_D2ougKsVEei6jsWe3ahhTg" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application" positionInList="after=window">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_IOjJ8KsVEei6jsWe3ahhTg" elementId="project0828-helloplugin-bonthu.menucontribution.0" positionInParent="after=window" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_N-DqcKsVEei6jsWe3ahhTg" elementId="project0828-helloplugin-bonthu.menu.helloplug-in" label="Hello Plug-in">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_QkFRgKsVEei6jsWe3ahhTg" elementId="project0828-helloplugin-bonthu.handledmenuitem.showhello" label="Show Hello" command="_S6bFgKsPEei6jsWe3ahhTg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Uk8e4KsVEei6jsWe3ahhTg" elementId="project0828-helloplugin-bonthu.handledmenuitem.readfileandshowhello" label="Read File and Show Hello" command="_BVOegKsREei6jsWe3ahhTg"/>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

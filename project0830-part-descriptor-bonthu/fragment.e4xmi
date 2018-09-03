@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_1d6qcKyeEeiZ0PpZuW0JRA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_2AMREKyeEeiZ0PpZuW0JRA" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_6kKykKyeEeiZ0PpZuW0JRA" elementId="project0830-part-descriptor-bonthu.command.showhellopartdescriptor" commandName="Show Hello Part Descriptor"/>
+    <elements xsi:type="commands:Command" xmi:id="_98muAKyeEeiZ0PpZuW0JRA" elementId="project0830-part-descriptor-bonthu.command.clearpartdescriptor" commandName="Clear Part Descriptor"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_EbZ9cKyfEeiZ0PpZuW0JRA" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_KN45cKyfEeiZ0PpZuW0JRA" elementId="project0830-part-descriptor-bonthu.partdescriptor.viewpartdescriptor" label="View Part Descriptor" contributionURI="bundleclass://project0830-part-descriptor-bonthu/viewer.ViewPartDescriptor">
+      <handlers xmi:id="_izlc0KyfEeiZ0PpZuW0JRA" elementId="project0830-part-descriptor-bonthu.handler.0" contributionURI="bundleclass://project0830-part-descriptor-bonthu/viewer.ShowHelloPartDescriptor" command="_6kKykKyeEeiZ0PpZuW0JRA"/>
+      <handlers xmi:id="_rnTVMKyfEeiZ0PpZuW0JRA" elementId="project0830-part-descriptor-bonthu.handler.1" contributionURI="bundleclass://project0830-part-descriptor-bonthu/viewer.ClearPartDescriptorHandler" command="_98muAKyeEeiZ0PpZuW0JRA"/>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_Lv2-UKymEeiZ0PpZuW0JRA" elementId="project0830-part-descriptor-bonthu.popupmenu.menu" label="menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_OHrxUKymEeiZ0PpZuW0JRA" elementId="project0830-part-descriptor-bonthu.handledmenuitem.showhello" label="Show Hello" command="_6kKykKyeEeiZ0PpZuW0JRA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_OpZ-UKymEeiZ0PpZuW0JRA" elementId="project0830-part-descriptor-bonthu.handledmenuitem.clear" label="Clear" command="_98muAKyeEeiZ0PpZuW0JRA"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
